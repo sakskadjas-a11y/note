@@ -201,13 +201,19 @@ git clone <仓库地址>
 git clone <仓库地址><新名字>（克隆了git仓库的项目目录并命名为新名字）
 ```
 
-repo 为git仓库，dire为本地目录
-
 ```
 eg : git clone https://github.com/tianqixin/runoob-git-test
 ```
 
 git命令使用后会自动将远程仓库的所有分支和历史记录复制到本地
+
+只克隆某一分支：如果你只想拉取某一个分支，而不是所有分支，可以加上 `--single-branch`：
+
+```
+git clone -b dev --single-branch https://github.com/user/demo.git
+```
+
+此时只克隆了dev分支
 
 ### 提交与修改
 
@@ -625,7 +631,7 @@ git merge origin/master
 
 #### git pull
 
-用于从远程获取代码并合并本地的版本,为git fetch 和git merge 合并
+用于从远程获取代码并**合并本地**的版本,为git fetch 和git merge 合并
 
 ```
 git pull [远程仓库名] [分支名]
