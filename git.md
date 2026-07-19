@@ -1,10 +1,8 @@
-# 
-
-git
+# git
 
 ## git工作流程
 
-![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@main/image/image.git1.png)
+![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@master/image/image.git1.png)
 
 1. 工作区：修改文件的地区，不进入版本历史；
 2. 暂存区：暂时保存未提交的代码，不进入版本历史；关键指令为git add
@@ -85,7 +83,7 @@ git push origin --delete new-feature
 
 - **版本库：**工作区有一个隐藏目录 **.git**，这个不算工作区，而是 Git 的版本库。
 
-	![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@main/image/image.git2.png)
+	![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@master/image/image.git2.png)
 
 	-  图中左侧为工作区，右侧为版本库。在版本库中标记为 "index" 的区域是暂存（stage/index），标记为 "master" 的是 master 分支所代表的目录树。
 	-  图中我们可以看出此时 "HEAD" 实际是指向 master 分支的一个"游标"。所以图示的命令中出现 HEAD 的地方可以用 master 来替换。
@@ -475,7 +473,7 @@ git restore [<options>] [<pathspec>...]
 - **`<pathspec>`**：要恢复的文件或目录路径。
 - **`<options>`**：用于定制恢复行为的选项。
 
-![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@main/image/image.git3.png)
+![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@master/image/image.git3.png)
 
 #### git show
 
@@ -488,7 +486,7 @@ git show [<options>] [<object>]
 - **`<object>`**：指定要显示的 Git 对象。可以是提交哈希、标签、分支名等。
 - **`<options>`**：显示的选项或格式设置。
 
-![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@main/image/image.git4.png)
+![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@master/image/image.git4.png)
 
 常用：
 
@@ -584,9 +582,10 @@ git shortlog [<options>] [<revision-range>]
 ```
 
 - **`<revision-range>`**：指定要生成摘要的提交范围，默认为当前分支的全部提交。
+
 - **`<options>`**：用于定制输出格式或行为的选项。
 
-![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@main/image/image.git5.png)
+	![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@master/image/image.git5.png)
 
 #### git describe
 
@@ -599,7 +598,7 @@ git describe [<options>] [<commit>]
 - **`<commit>`**：指定要描述的提交。默认为当前提交。
 - **`<options>`**：用于定制输出格式或行为的选项。
 
-![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@main/image/image.git6.png)
+![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@master/image/image.git6.png)
 
 ### 远程操作
 
@@ -933,7 +932,7 @@ git push origin --delete <branchname>
 
 ### 命令手册
 
-![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@main/image/image.git7.png)
+![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@master/image/image.git7.png)
 
 ##  git 恢复和回退
 
@@ -1000,7 +999,7 @@ git reset --hard <commit>
 git reset --hard abc123
 ```
 
-![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@main/image/image.git8.png)
+![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@master/image/image.git8.png)
 
 ### 3、git revert：撤销某次提交
 
@@ -1016,7 +1015,7 @@ git revert <commit>
 git revert abc123
 ```
 
-![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@main/image/image.git9.png)
+![](https://cdn.jsdelivr.net/gh/sakskadjas-a11y/note@master/image/image.git9.png)
 
 ### 4、git reflog：查看历史操作记录
 
